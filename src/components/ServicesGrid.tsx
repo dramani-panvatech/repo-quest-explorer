@@ -3,23 +3,23 @@ import { Leaf, Brain, Clock, Ambulance } from "lucide-react";
 const services = [
   {
     icon: Leaf,
-    title: "Meaningful Use Compliance",
-    description: "Becoming meaningful use compliant can have a positive impact on your practice. Improving transparency and efficiency, engaging patients and maintaining the privacy and security of all health information are just a few of the benefits you can enjoy using PatientClick Certified EHR.",
+    title: "EHR Compliance & Quality Care",
+    description: "Stay compliant and deliver better care with PatientClick’s Certified EHR. Simplify documentation, secure patient data, and meet Meaningful Use standards—boosting both efficiency and outcomes.",
   },
   {
     icon: Brain,
-    title: "Process Improvement",
-    description: "Let us improve your practice performance. While evaluating the overall workflow of the office we will help optimize existing processes to increase productivity and revenue.",
+    title: "Clinical Workflow Optimization",
+    description: "Boost practice efficiency by identifying and eliminating workflow bottlenecks. Streamline operations, reduce admin burden, and improve both provider productivity and patient satisfaction.",
   },
   {
     icon: Clock,
     title: "Revenue Cycle Management",
-    description: "PatientClick's Revenue Cycle Management allows physician practices to utilize secured web-based technology to improve patient collections and improve practice bottomline.",
+    description: "PatientClick’s web-based tools streamline billing and collections—from registration to payment. Improve cash flow, reduce denials, and stay focused on delivering quality care.",
   },
   {
     icon: Ambulance,
-    title: "Go-Live Assistance",
-    description: "Our highly trained Implementation Specialists are available 24/7 to assist with the go live process. Our effective training specialists coupled with other knowledgeable team members makes for a smooth transition.",
+    title: "From Go-Live to Great Care",
+    description: "Our Implementation Specialists provide hands-on training and personalized support to ensure a smooth, efficient EHR launch—so you can focus on patient care from day one.",
   }
 ];
 

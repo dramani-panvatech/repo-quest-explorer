@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, DollarSign, Users, Calendar, ArrowRight } from "lucide-react";
+import { FileText, DollarSign, Users, Calendar, Pill, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const solutions = [
@@ -19,8 +19,8 @@ const solutions = [
     color: "bg-purple-50 text-purple-600",
     hoverColor: "bg-purple-100 text-purple-700"
   },
-  
-  
+
+
   {
     icon: Users,
     title: "Patient Engagement",
@@ -36,6 +36,14 @@ const solutions = [
     href: "/products/practice-management",
     color: "bg-green-50 text-green-600",
     hoverColor: "bg-green-100 text-green-700"
+  },
+  {
+    icon: Pill,
+    title: "Telemedicine",
+    description: "Healthcare delivered remotely using technology like video calls and apps.",
+    href: "/products/telemedicine",
+    color: "bg-red-50 text-red-600",
+    hoverColor: "bg-red-100 text-red-700"
   }
 ];
 
@@ -48,21 +56,21 @@ export default function SolutionsOverview() {
             Comprehensive Healthcare Solutions
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to run a modern healthcare practice, 
+            Everything you need to run a modern healthcare practice,
             all integrated seamlessly in one platform.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {solutions.map((solution, index) => (
-            <Card 
+            <Card
               key={solution.title}
               className="group relative overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-out border-0 bg-white/80 backdrop-blur-sm animate-fade-in cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Hover background effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
+
               <CardHeader className="text-center pb-4 relative z-10">
                 <div className={`w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-4 ${solution.color} group-hover:${solution.hoverColor} group-hover:scale-110 transition-all duration-300`}>
                   <solution.icon className="w-8 h-8 group-hover:rotate-12 transition-transform duration-300" />
@@ -75,7 +83,7 @@ export default function SolutionsOverview() {
                 <p className="text-muted-foreground mb-6 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                   {solution.description}
                 </p>
-                <Link 
+                <Link
                   to={solution.href}
                   className="inline-flex items-center text-primary font-medium hover:text-primary-hover group-hover:translate-x-2 transition-all duration-300"
                 >
@@ -83,7 +91,7 @@ export default function SolutionsOverview() {
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:rotate-45 transition-transform duration-300" />
                 </Link>
               </CardContent>
-              
+
               {/* Subtle border animation on hover */}
               <div className="absolute inset-0 rounded-lg border-2 border-transparent group-hover:border-primary/20 transition-colors duration-500"></div>
             </Card>
