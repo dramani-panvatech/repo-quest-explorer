@@ -21,6 +21,7 @@ import {
   LazyPatientEngagement,
   LazyPracticeManagement,
   LazyRevenueCycleProduct,
+  LazyTelemedicine,
   LazyMedicalBilling,
   LazyEligibilityCheck,
   LazyScheduleAutomation,
@@ -54,6 +55,7 @@ const App = () => (
           <Route path="/products/patient-engagement" element={<LazyWrapper><LazyPatientEngagement /></LazyWrapper>} />
           <Route path="/products/practice-management" element={<LazyWrapper><LazyPracticeManagement /></LazyWrapper>} />
           <Route path="/products/revenue-cycle" element={<LazyWrapper><LazyRevenueCycleProduct /></LazyWrapper>} />
+          <Route path="/products/telemedicine" element={<LazyWrapper><LazyTelemedicine /></LazyWrapper>} />
           {/* Individual service routes */}
           <Route path="/services/medical-billing" element={<LazyWrapper><LazyMedicalBilling /></LazyWrapper>} />
           <Route path="/services/eligibility-check" element={<LazyWrapper><LazyEligibilityCheck /></LazyWrapper>} />

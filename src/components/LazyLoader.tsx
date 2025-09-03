@@ -16,6 +16,7 @@ export const LazyEPrescription = lazy(() => import('../pages/products/EPrescript
 export const LazyPatientEngagement = lazy(() => import('../pages/products/PatientEngagement'));
 export const LazyPracticeManagement = lazy(() => import('../pages/products/PracticeManagement'));
 export const LazyRevenueCycleProduct = lazy(() => import('../pages/products/RevenueCycle'));
+export const LazyTelemedicine = lazy(() => import('../pages/products/Telemedicine'));
 
 // Service pages
 export const LazyMedicalBilling = lazy(() => import('../pages/services/MedicalBilling'));

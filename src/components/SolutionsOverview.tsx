@@ -61,7 +61,7 @@ export default function SolutionsOverview() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8">
           {solutions.map((solution, index) => (
             <Card
               key={solution.title}

@@ -21,6 +21,7 @@ const navItems: NavItem[] = [
       { label: "Revenue Cycle Management", href: "/products/revenue-cycle" },
       { label: "Patient Engagement", href: "/products/patient-engagement" },
       { label: "Practice Management", href: "/products/practice-management" },
+      { label: "Telemedicine", href: "/products/telemedicine" },
     ],
   },
   {
